@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SheZViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1wB-Uz-MKY">
+                    <rect key="frame" x="0.0" y="17" width="320" height="44"/>
+                    <items>
+                        <navigationItem title="设置" id="0BA-eR-fbW">
+                            <barButtonItem key="leftBarButtonItem" style="plain" id="UJV-c5-MqN">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1qQ-aV-Z54">
+                                    <rect key="frame" x="16" y="7" width="30" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="fanhui">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="PopButton:" destination="-1" eventType="touchUpInside" id="te2-06-VrD"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1wB-Uz-MKY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Kwo-Ag-oxH"/>
+                <constraint firstItem="1wB-Uz-MKY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="22" id="SQo-AR-FwE"/>
+                <constraint firstAttribute="trailing" secondItem="1wB-Uz-MKY" secondAttribute="trailing" id="dFE-TI-Rtf"/>
+            </constraints>
+            <point key="canvasLocation" x="413" y="362"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fanhui" width="30" height="30"/>
+    </resources>
+</document>

@@ -1,0 +1,43 @@
+//
+//  ShoppingCartViewController.m
+//  BiTuBiPV
+//
+//  Created by 必图必 on 15/11/16.
+//  Copyright (c) 2015年 必图必. All rights reserved.
+//
+
+#import "ShoppingCartViewController.h"
+#import "ShoppingCartView.h"
+#import "DzXGViewController.h"
+@interface ShoppingCartViewController ()
+
+@end
+
+@implementation ShoppingCartViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.title = @"购物车";
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    ShoppingCartView *sp = [[ShoppingCartView alloc] initWithNibName:@"ShoppingCartView" bundle:nil];
+    [self presentViewController:sp animated:YES completion:nil];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end

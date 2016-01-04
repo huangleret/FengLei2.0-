@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WLTZViewController">
+            <connections>
+                <outlet property="MyTableView" destination="eOV-JH-zGX" id="Ij3-dm-g59"/>
+                <outlet property="ttt" destination="vDn-oI-aIC" id="ist-GQ-6ay"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="eOV-JH-zGX">
+                    <rect key="frame" x="0.0" y="66" width="320" height="502"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </tableView>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vDn-oI-aIC">
+                    <rect key="frame" x="0.0" y="22" width="320" height="36"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="物流消息" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecK-zL-96P">
+                            <rect key="frame" x="126" y="7" width="68" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNY-hS-PT8">
+                            <rect key="frame" x="16" y="3" width="30" height="30"/>
+                            <state key="normal" image="fanhui">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="FanHui:" destination="-1" eventType="touchUpInside" id="hfn-ep-uhI"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="5z9-QG-yVd"/>
+                        <constraint firstItem="wNY-hS-PT8" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vDn-oI-aIC" secondAttribute="top" constant="3" id="8n4-iW-DNn"/>
+                        <constraint firstAttribute="centerX" secondItem="ecK-zL-96P" secondAttribute="centerX" id="Gvy-Dk-bBg"/>
+                        <constraint firstAttribute="bottom" secondItem="wNY-hS-PT8" secondAttribute="bottom" constant="3" id="LEP-KQ-TOO"/>
+                        <constraint firstItem="wNY-hS-PT8" firstAttribute="top" secondItem="vDn-oI-aIC" secondAttribute="top" constant="3" id="PA1-zu-s2p"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="wNY-hS-PT8" secondAttribute="bottom" constant="3" id="cen-Tp-aoH"/>
+                        <constraint firstItem="wNY-hS-PT8" firstAttribute="leading" secondItem="vDn-oI-aIC" secondAttribute="leading" constant="16" id="o2K-dj-vrE"/>
+                        <constraint firstAttribute="centerY" secondItem="ecK-zL-96P" secondAttribute="centerY" id="reG-TL-nvn"/>
+                        <constraint firstItem="wNY-hS-PT8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vDn-oI-aIC" secondAttribute="leading" constant="16" id="uga-Tm-hSw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vDn-oI-aIC" secondAttribute="trailing" id="K9l-ev-zST"/>
+                <constraint firstItem="vDn-oI-aIC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="22" id="Tmy-TE-UxN"/>
+                <constraint firstItem="vDn-oI-aIC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gwj-SZ-Xf2"/>
+                <constraint firstItem="eOV-JH-zGX" firstAttribute="top" secondItem="vDn-oI-aIC" secondAttribute="bottom" id="h5C-Lm-QSV"/>
+                <constraint firstAttribute="trailing" secondItem="eOV-JH-zGX" secondAttribute="trailing" id="heV-ZG-IdM"/>
+                <constraint firstItem="eOV-JH-zGX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="i4o-0J-84A"/>
+                <constraint firstAttribute="bottom" secondItem="eOV-JH-zGX" secondAttribute="bottom" id="qkH-pE-QK8"/>
+            </constraints>
+            <point key="canvasLocation" x="201" y="168"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fanhui" width="30" height="30"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

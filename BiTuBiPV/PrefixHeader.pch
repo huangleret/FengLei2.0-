@@ -1,0 +1,40 @@
+//
+//  PrefixHeader.pch
+//  BiTuBiPV
+//
+//  Created by 必图必 on 15/11/18.
+//  Copyright (c) 2015年 必图必. All rights reserved.
+//
+
+#ifndef BiTuBiPV_PrefixHeader_pch
+#define BiTuBiPV_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "Common.h"
+
+#import "UserModel.h"
+
+#import <UIKit/UIKit.h>
+
+#import <Foundation/Foundation.h>
+
+//// 颜色
+#define BTBColor(r,g,b) [UIColor colorWithRed:r/255.f green:g/255.f blue:b/255.f alpha:1]
+
+///// //////  屏幕宽高
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+#define kScreenWidth  [UIScreen mainScreen].bounds.size.width
+
+//预编译的NSLog , 优化代码的
+#ifdef DEBUG
+#define BTBLog(format, ...) NSLog(format, ## __VA_ARGS__)
+#else
+#define BTBLog(format, ...)
+#endif
+
+#import "UIViewExt.h"
+
+
+#endif
